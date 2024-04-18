@@ -7,7 +7,7 @@ const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
-const uri = "mongodb+srv://csis3380:csis3380@mongodb.fy9uvhj.mongodb.net/StudentList?retryWrites=true&w=majority";
+const uri = "mongodb+srv://csis3380:csis3380@cluster.vrcmqo4.mongodb.net/StudentList?retryWrites=true&w=majority";
 mongoose.connect(uri);
 const connection = mongoose.connection;
 connection.once('open', () => {
